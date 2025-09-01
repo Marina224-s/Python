@@ -19,6 +19,7 @@ wait = WebDriverWait(driver, 10)
 wait.until(EC.text_to_be_present_in_element((By.ID, "updatingButton"), "SkyPro"))
 
 # Получаем текст кнопки и выводим в консоль
-print(driver.find_element(By.ID, "updatingButton").text)
+print(driver.find_element
+    (By.ID, "updatingButton").text)
 
 driver.quit()
