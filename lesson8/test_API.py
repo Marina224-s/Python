@@ -85,4 +85,5 @@ def test_update_project_put__404_unknown_id():
         json={"title": "x"},
         headers=HEADERS,
     )
+
     assert r.status_code == 404, r.text
